@@ -3,7 +3,17 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
-import siteConfiguration from './.figma/make/site.json'
+const siteConfiguration: FigmaSiteConfiguration = {
+  description:
+    'An interactive prototype for UI/UX designers that showcases AI-assisted research synthesis, enabling users to analyze data, generate insights, and create user flows.',
+  robots: {
+    index: false,
+  },
+  accessibility: {
+    addBypassLinks: false,
+    ignoreReducedMotion: false,
+  },
+}
 
 
 // Vite config — https://vitejs.dev/config/
